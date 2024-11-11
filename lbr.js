@@ -91,7 +91,7 @@ function addBookToDom(title, author, pages, score, status, progress) {
     coverContainer.classList.add('cover');
     //This the actual cover image
     const imageEle = document.createElement('img');
-    imageEle.src = "./images/default-cover.png";
+    imageEle.src = "./images/default-cover.webp";
     imageEle.alt = 'cover';
     
     //All the created elements and it's children are 
