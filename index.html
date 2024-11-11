@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Library</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="library">Library</div>
+
+<div class="container">
+    <!-- Example Book Element -->
+    <div class="addedBooks">
+        <div class="book">
+            <div class="info">
+                <h5>Spice and Wolf</h5>
+                <p>Written by, Isuna Hasekura</p>
+                <p>Pages: 1</p>
+                <p>Score: 10</p>
+                <p>Status: Reading</p>
+                <p>Progress: </p>
+            </div>
+            <div class="cover"><img src="./images/wolf-cover.jpg" alt="Cover image" width="" height=""></div>
+        </div>
+
+        <div class="book">
+            <div class="info">
+                <h5>Mushoku Tensei</h5>
+                <p>Written by, Rifujin na Magonote</p>
+                <p>Pages: 1</p>
+                <p>Score: 10</p>
+                <p>Status: Completed</p>
+                <p>Progress: </p>
+
+            </div>
+            <div class="cover"><img src="./images/Mushoku-tensei-cover.jpg" alt=""></div>
+        </div>
+
+        <div class="book">
+            <div class="info">
+                <h5>Bacano</h5>
+                <p>Written by, Ryohgo Narita</p>
+                <p>Pages: 1</p>
+                <p>Score: 10</p>
+                <p>Status: Completed</p>
+                <p>Progress: </p>
+
+            </div>
+            <div class="cover"><img src="./images/bacano-the-rolling-bootlegs.jpg" alt=""></div>
+        </div>
+
+        <!-- Add more books here -->
+    </div>
+    <!-- Add Button -->
+    <div class="addBtn">
+        <button type="button" class="btn">
+            <span class="btn__text">Add</span>
+            <span class="btn__icon">
+                    <svg width="24" viewBox="0 0 24 24" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" height="24" fill="none" class="svg">
+                        <line y2="19" y1="5" x2="12" x1="12"></line>
+                        <line y2="12" y1="12" x2="19" x1="5"></line>
+                    </svg>
+            </span>
+        </button>
+    </div>
+    <!-- Pop-up Form -->
+    <div id="pop" class="pop">
+        <div class="popContent">
+            <form action="#" method="get" id="bookForm">
+                <header>Add a new book</header>
+                <!-- Title -->
+                <div>
+                    <label for="title" class="statusLabel">Title</label>
+                    <input type="text" id="title" class="bookInfo" name="title" placeholder="Title" required>
+                </div>
+                <!-- Author -->
+                <div>
+                    <label for="author" class="statusLabel">Author</label>
+                    <input type="text" id="author" class="bookInfo" name="author" placeholder="Author" required>
+                </div>
+                <!-- Pages -->
+                <div>
+                    <label for="pages" class="statusLabel">Pages</label>
+                    <input type="number" id="pages" class="bookInfo" name="pages" placeholder="Pages" required>
+                </div>
+                <!-- Score -->
+                <div>
+                    <label for="score" class="statusLabel">Score</label>
+                    <input type="number" id="score" placeholder="Score" class="bookInfo" name="score" value="1"
+                           min="1" max="10" required>
+                </div>
+                <!-- Status -->
+                <div>
+                    <label for="status" class="statusLabel">Status</label>
+                    <select id="status" name="status" class="bookInfo">
+                        <option value="reading">Reading</option>
+                        <option value="completed">Completed</option>
+                        <option value="onHold">On hold</option>
+                        <option value="dropped">Dropped</option>
+                        <option value="planToRead">Plan to read</option>
+                    </select>
+                </div>
+                <!-- Progress -->
+                <div>
+                    <label for="progress" class="statusLabel">Progress</label>
+                    <input type="number" id="progress" placeholder="Progress" class="bookInfo" name="progress" value="0"
+                           min="0">
+                </div>
+
+                <button type="submit" class="btnSub">Add book</button>
+            </form>
+        </div>
+    </div>
+
+
+
+</div>
+
+<script src="lbr.js"></script>
+</body>
+</html>
