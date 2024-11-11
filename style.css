@@ -30,7 +30,7 @@ input {
 @media (max-width: 768px) {
     body {
         background-size: 200% 200% !important;
-
+        animation: none !important;
     }
 
     .book .cover {
@@ -128,8 +128,12 @@ input {
 
 .addedBooks {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: repeat(4, 1fr);
     gap: 1rem;
+    padding: 1rem;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
 }
 
 .bookInfo {
